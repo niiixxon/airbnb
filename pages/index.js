@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Banner from '../components/Banner'
+import Footer from '../components/Footer';
 import Header from '../components/Header'
 import LargeCard from '../components/LargeCard';
 import MediumCard from '../components/MediumCard';
@@ -35,7 +36,7 @@ export default function Home({ exploreData, cardsData }) {
 
 
         <section>
-          <h2 className="text-4xl font-semibold pb-5">Live Anywhere</h2>
+          <h2 className="text-4xl font-semibold pb-5 mt-5">Live Anywhere</h2>
 
           <div className="flex space-x-3 overflow-scroll scrollbar-hide p-3 -ml-3">
               {cardsData?.map(({img, title}) => (
@@ -56,6 +57,8 @@ export default function Home({ exploreData, cardsData }) {
         />
 
       </main>
+
+      <Footer />
 
     </div>
   )
