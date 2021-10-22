@@ -68,7 +68,7 @@ function Header({ placeholder }) {
                  onChange={(e) => setSearchInput(e.target.value)}
                  className=" flex-grow pl-5 bg-transparent outline-none text-sm text-gray-600 placeholder-gray-400 active:scale-90 transition duration-50 " type="text" placeholder={placeholder || "Start your Search"}
                  />
-                 <SearchIcon onClick={() => router.push('/search')}
+                 <SearchIcon
                   className=" hidden md:inline-flex h-8 bg-red-400 text-white rounded-full p-2 cursor-pointer hover:bg-red-500 focus:outline-none focus:ring-2 focus:ring-red-700 focus:ring-opacity-50 md:mx-2 active:scale-90 transition duration-150" />
             </div>
 
